@@ -1,0 +1,23 @@
+
+
+Task2:
+After the model sees some 3000 points the accuracy became more or less saturated.
+Probably becase the given data was not linearly seperable between all classes, full accuracy cant be expected. Also the training with non-seperable data will lead to some errors with earlier seen points while correcting some critical points (points which make the data inseperable by a line).
+After the model has seen some 3000 points it has learned enough and further points do not really affect the model.
+Also test accuracy is expected to be less than train accuracy which is evident from the plots due to the fact that test data need not exactly resemble the train data.
+Also it appears from the plot that train and test accuracy meet after seeing large number of points. (With increase in points test data resembles train data better)
+
+With 0 training data the model would have random weights(which were the initial weights), It is equally likely for the classifier to predict one of the class and so expected accuracy is 1/(# of classes)  
+
+Task3:   
+
+Full data
+1vr (73.8%)
+1v1 (78.8%)
+
+800 8000
+1vr (71.3%)
+1v1 (71.5%)
+
+
+1vr almost saturates with 800 data points i.e it has learnt enough while 1v1 having more parameters required more training poits to actually do its best.

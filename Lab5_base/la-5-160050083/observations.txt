@@ -1,0 +1,17 @@
+task 4)
+	ridge-regression:
+		lr 			:	0.00001
+		max_iter	:	30000
+		lambda		:	12.4
+		sse 		:	540311939517.00323
+	lasso-regression:
+		max_iter	:	200
+		lambda		:	0.42e6
+		sse			:	531831897106.0023
+
+	Plotting values of sse vs tuned paremeters gives an idea of where to localize the search to find optimal tunable parameters
+
+task 5)
+	The solution/weights given by lasso-regression has many zero elements. This arises because the intersection of the loss and regulirizer happens at a corner of the hypercube(refer to link given in problem statement) as intersection occurs when both contours have the same gradient and corner can be considered as curve with very small curvature and thus approximates a range of gradients. This is not the case with ridge-regression as the boundaries are smooth(no corner like structures)
+
+	This is advantageous as the features corresponding to 0 weights can be considered useless while predicting the output(in other words, other features are more important than the above features)

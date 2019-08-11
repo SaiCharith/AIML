@@ -1,0 +1,24 @@
+
+Task 3 : Why DFS Algorithm? Can we perform informed search?
+	We can try heuristics like number of possible choices that can be made from a grid.
+		G(state) = no. of digits eleminated to reach this state from parent + cost of parent
+		H(state) = no. of unfilled boxes (boxes with more than 1 possibility)
+	It is similar to BFS.
+	I dont think any useful heuristics exist for this problem which can do better than DFS like in case of shortest path.
+
+
+Task 7 : Why A* Algorithm? Possible Heuristic for Travelling Student Problem: 
+	Any state which is closer to start state than goal state will be visited in Dijkstras which is same as A* with Null heuristic.
+		Number of nodes expanded for IIT: 80
+		Number of nodes expanded for IIT: 26743
+
+	In case of TSP 
+		node is a (city,path cost,parent,goal states reached)
+		path cost is total distance travelled so far.
+		heuristic is maximum distance to unreached goal state. 
+			H(goal node) = 0
+			H(n1) <= c(n1.state,n2.state) + H(n2) 
+				This is true if H(n1)<=H(n1)
+				if H(n1)>H(n2)
+					H(n1)<d(n1.state,n2.state)+d(n2.state,n1s_farthest_goal_state)<= d(n1.state,n2.state) + H(n2) 
+			So H is consistent and hence we can do A* graph search with this heuristic 

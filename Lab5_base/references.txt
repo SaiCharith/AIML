@@ -1,0 +1,5 @@
+
+numpy functions
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.append.html
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.unique.html
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.norm.html

@@ -1,0 +1,63 @@
+
+Final values in each task
+task 2)
+
+	719.9199262363668
+	749.2793860646264
+	738.4171511829305
+	718.6475563246543
+	785.7032887861945
+
+task 3)
+
+	691.0818376431571
+	691.8680258739563
+	733.5379239255524
+	714.5560646987941
+	690.9969512727597
+
+task 4)
+	708.7995327612067
+
+
+task 6)
+
+	684.8684779595784
+	688.6595830945708
+	700.5725646714585
+	701.0282575318483
+	699.2439171899878
+
+
+task 7)
+	684.1444900192964
+	691.9529122443537
+	695.8126123211697
+	689.7079552062488
+	688.2901505128036
+
+
+task 8)
+	702.0633951150639
+
+
+Comparing task2,3,4
+Based on the graphs and final values obtained random initialization is not performing well. 
+Based on the values it can be seen that best(shortest) tour is obained by one of the initializations of task3. But with Nearest neighbours there are no theoritical gaurentees. In order to avoid risk it may be better to choose Euclidian mst method.
+
+Comparing task2,6
+Based on graphs and final values obtained it can be seen that 3-opt+2-opt is way better than 2-opt. This is beacuse 3-opt+2-opt explores more permutations of cities. But 3-opt+2-opt takes a lot more time than 2-opt, hence it may be wiser to prefer 2-opt.
+
+Comparing task3,7
+Based an final values task7 is better than task3. Also the variation of end result is not very much in case task7. Hence task7 may be preferd. But again, time taken by 3-opt is more than 2-opt.
+
+Comparing task4,8
+Ths difference between final values obtained are not very different. Although task8 is better in terms final value obtained it may be wiser to prefer task4 in realtime applications.
+
+
+In general results obtained by 3-opt + 2-opt are better than 2-opt could be a result of more exploration of the search space. (But there are cases(task-3,task-7 for example) where 2-opt gave better results than 2-opt+3-opt)
+
+
+
+
+

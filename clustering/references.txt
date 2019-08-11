@@ -1,0 +1,10 @@
+
+
+Maps in python
+https://www.programiz.com/python-programming/methods/built-in/map 
+List operations
+https://www.geeksforgeeks.org/python-maximum-minimum-elements-position-list/
+Reading file in python
+https://stackoverflow.com/questions/8009882/how-to-read-a-large-file-line-by-line-in-python
+Ascii to char conversion
+https://en.wikibooks.org/wiki/Python_Programming/Text

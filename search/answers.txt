@@ -1,0 +1,21 @@
+
+Task 3 : Why DFS Algorithm? Can we perform informed search?
+	We can try heuristics like number of places there are more than one possible numbers that can be filled.
+	
+
+Task 7 : Why A* Algorithm? Possible Heuristic for Travelling Student Problem: 
+	Any state which is closer to start state than goal state will be visited in Dijkstras
+	In case of multiple goal states, for any state min{Euclidian distance form state to goal state i} can be used.
+	This is a consistent heuristic.
+	For any n1,n2 if n1 and n2 have same goal state has closest goal state then its consistent.
+	If n1 has g1 as shortest goal state and n2 has g2, then
+		d(n1,g1)<=c(n1,n2)+d(n2,g1)		(1)
+		d(n1,g2)<=c(n1,n2)+d(n2,g2)		(2)   
+		d(n1,g1)<=d(n1,g2)				(3)
+		d(n2,g2)<=d(n2,g1)				(4)
+
+	Using (2),(3)
+		d(n1,g1)<=d(n1,g2)<=c(n1,n2)+d(n2,g2)
+	which is d(n1,g1)<=c(n1,n2)+d(n2,g2)
+
+	Therefore our heuristic is consistant.
